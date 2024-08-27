@@ -133,7 +133,7 @@ body {
 
 /* ------------------------------------------------------------------------------ */
 .hero {
-    background-image: url('./assets/images/Land.6cf3c3fb.png');
+    background-image: url('../images/Land.6cf3c3fb.png');
     background-size: cover;
     color: white;
     padding: 100px 0;
@@ -779,7 +779,7 @@ body {
     align-items: center;
     padding: 20px;
     background-color: #f9f9f9;
-    background-image: url("./assets/images/polygon.png");
+    background-image: url("../images/polygon.png");
     background-repeat: no-repeat;
     background-position: bottom;
 }
@@ -951,7 +951,7 @@ body {
 
 /* ------------------------------------------------------------------------------ */
 footer {
-    background-image: url("./assets/images/footer.022d0f1f.png");
+    background-image: url("../images/footer.022d0f1f.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -1065,7 +1065,7 @@ footer .credits .links a:hover {
 }
 
 .thankyou{
-    background-image: url("./assets/images/footer.022d0f1f.png");
+    background-image: url("../images/footer.022d0f1f.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -1120,13 +1120,13 @@ footer .credits .links a:hover {
 }
 
 .privacy-policy{
-    background-image: url("./assets/images/home.554f419c.webp");
+    background-image: url("../images/home.554f419c.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .text-content{
-    background-image: url("./assets/images/footer.022d0f1f.png");
+    background-image: url("../images/footer.022d0f1f.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
