@@ -1,20 +1,20 @@
 // JavaScript for animating text
-document.addEventListener('DOMContentLoaded', function() {
-    const texts = [
-        document.getElementById('text-1'),
-        document.getElementById('text-2'),
-    ]; // Array of text elements to cycle through
+// document.addEventListener('DOMContentLoaded', function() {
+//     const texts = [
+//         document.getElementById('text-1'),
+//         document.getElementById('text-2'),
+//     ]; // Array of text elements to cycle through
 
-    let currentIndex = 0;
+//     let currentIndex = 0;
 
-    function changeText() {
-        texts[currentIndex].classList.remove('active'); // Fade out current text
-        currentIndex = (currentIndex + 1) % texts.length; // Move to next text
-        texts[currentIndex].classList.add('active'); // Fade in new text
-    }
+//     function changeText() {
+//         texts[currentIndex].classList.remove('active'); // Fade out current text
+//         currentIndex = (currentIndex + 1) % texts.length; // Move to next text
+//         texts[currentIndex].classList.add('active'); // Fade in new text
+//     }
 
-    setInterval(changeText, 2000); // Change text every 2 seconds
-});
+//     setInterval(changeText, 2000); // Change text every 2 seconds
+// });
 
 $('#carousel1').owlCarousel({
     stagePadding: 50,
