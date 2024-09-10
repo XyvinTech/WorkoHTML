@@ -255,8 +255,12 @@ const servicesArray = [
     "Geyser Repair", "Geyser Installation", "Geyser Servicing", "Washing Machine Installation",
     "Washing Machine Servicing", "Networking Solutions"
 ];
+const ACservicesArray = [
+    "AC Repair", "AC Maintenance", "AC Installation"
+];
 
 const services = [...new Set(servicesArray)];
+const acServices = [...new Set(ACservicesArray)];
 
 let activeAutocompleteType = null; // Track the active autocomplete input
 
@@ -266,8 +270,15 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function initializeAutocomplete() {
-    setupAutocomplete(document.getElementById('city'), apiCities, 'city');
-    setupAutocomplete(document.getElementById('service'), services, 'service');
+    if(document.getElementById('city')){
+        setupAutocomplete(document.getElementById('city'), apiCities, 'city');
+    }
+    if(document.getElementById('service')){
+        setupAutocomplete(document.getElementById('service'), services, 'service');
+    }
+    if(document.getElementById('ACservice')){
+        setupAutocomplete(document.getElementById('ACservice'), acServices, 'ACservice');
+    }
 }
 
 function setupAutocomplete(inputElement, items, type) {
@@ -286,7 +297,6 @@ function setupAutocomplete(inputElement, items, type) {
         displaySuggestions(this, items.filter(item => item.toLowerCase().includes(value.toLowerCase())), type);
     });
 
-    // Improved click handling logic
     document.addEventListener('mousedown', function (event) {
         if (activeAutocompleteType) {
             const suggestionBoxId = `${activeAutocompleteType}-items`;
